@@ -19,7 +19,7 @@ public class Digits {
             while (num>=0){
                 if (num==0){ num = -1;}
                 else{
-                digits.add(num%10);
+                digits.add(0, num%10);
                 num = num/10;}
             }
         }
