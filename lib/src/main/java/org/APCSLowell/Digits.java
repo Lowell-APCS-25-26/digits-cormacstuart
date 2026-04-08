@@ -13,6 +13,16 @@ public class Digits {
      */
     public Digits(int num) {
         /* To be implemented in part (a) */
+
+        public Digits(int num){
+            while (num>0){
+                digits.add(num%10);
+                num = num/10;
+            }
+        }
+
+
+
         throw new UnsupportedOperationException();
     }
 
@@ -21,6 +31,17 @@ public class Digits {
      */
     public boolean isStrictlyIncreasing() {
         /* To be implemented in part (b) */
+       
+        for (int i =0; i<digits.size()-1;i++){
+
+            if (digits.get(i)>digits.get(i+1))
+                return false;
+        }
+        return true;
+
+        }
+
+
         throw new UnsupportedOperationException();
     }
 }
